@@ -1,0 +1,13 @@
+{
+  "domain": "solaxcloud",
+  "name": "Solax Cloud",
+  "codeowners": [
+    "@frank8the9tank"
+  ],
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/solaxcloud",
+  "iot_class": "cloud_polling",
+  "loggers": ["solaxcloud"],
+  "requirements": [],
+  "version": "v0.1.0"
+}
