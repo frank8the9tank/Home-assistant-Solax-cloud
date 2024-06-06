@@ -7,3 +7,6 @@ todo things:
 2. get inverter type and based on model add the correct sensor to the integration
 3. translation
 4. 
+
+goal:
+add integration to the official home assistant integration list.
