@@ -6,8 +6,8 @@
         "title": "Provide your token and serial number 1",
         "description": "Provide your token and serial number 2",
         "data": {
-          "token_id": "Your token id",
-          "serial_number": "Your serial number"
+          "token": "Your token id",
+          "serial": "Your serial number"
         }
       }
     },
