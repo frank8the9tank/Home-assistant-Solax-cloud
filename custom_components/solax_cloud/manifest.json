@@ -8,6 +8,6 @@
   "documentation": "https://www.home-assistant.io/integrations/solaxcloud",
   "iot_class": "cloud_polling",
   "loggers": ["solax_cloud"],
-  "requirements": [],
+  "requirements": ["solaxcloud==0.1.0"],
   "version": "v0.1.1"
 }
