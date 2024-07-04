@@ -9,5 +9,5 @@
   "iot_class": "cloud_polling",
   "loggers": ["solax_cloud"],
   "requirements": ["solaxcloud==0.1.0"],
-  "version": "v0.1.1"
+  "version": "v0.1.2"
 }
