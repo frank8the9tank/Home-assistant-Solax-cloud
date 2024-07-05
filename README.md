@@ -15,9 +15,9 @@ usage:
 1. Use the PocketLAN or PocketWiFi serial number, NOT the inverter serial number.
 2. Obtain Token from the Solax Cloud website
    Old interface:
-   Service -> API -> API：Real-time display -> TokenID
+   Service -> API -> API: Real-time display -> TokenID
    New interface:
-   Support -> Third-party ecology -> API：Real-Time Display -> TokenID
+   Support -> Third-party ecology -> API: Real-Time Display -> TokenID
 
 
 Installation:
