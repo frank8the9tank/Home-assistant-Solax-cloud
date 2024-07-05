@@ -13,7 +13,12 @@ add integration to the official home assistant integration list.
 
 usage:
 1. Use the PocketLAN or PocketWiFi serial number, NOT the inverter serial number.
-2. Use Token from the Solax Cloud website, solax website: under API, generate token) 
+2. Obtain Token from the Solax Cloud website
+   Old interface:
+   Service -> API -> API：Real-time display -> TokenID
+   New interface:
+   Support -> Third-party ecology -> API：Real-Time Display -> TokenID
+
 
 Installation:
 Add repository URL to custom repository in hacs
