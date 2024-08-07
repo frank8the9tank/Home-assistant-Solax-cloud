@@ -4,9 +4,10 @@ Solax cloud integration for home assistant
 
 todo things:
 1. Add labels to the config flow input fields, Don't know why these are not shown.
-2. Get inverter type and based on model add the correct sensor to the integration
-3. Translation
-4. 
+2. Get inverter type and based on model add the correct sensor to the integration.
+3. Translation.
+4. Add HTTP retry actions when no connection is detected/solax could not responding.
+5. 
 
 goal:
 add integration to the official home assistant integration list.
