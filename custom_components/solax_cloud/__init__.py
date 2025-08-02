@@ -1,4 +1,4 @@
-"""The Solax Cloud integration."""
+"""The Solax Cloud integration, test"""
 
 from __future__ import annotations
 
