@@ -20,9 +20,6 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from .const import DOMAIN
 from .coordinator import solaxcloudCoordinator
 
-ISSUE_PLACEHOLDER = {"url": "/config/integrations/dashboard/add?domain=solaxcloud"}
-
-
 async def async_setup_entry(
     hass: HomeAssistant,
     entry: ConfigEntry,
@@ -60,7 +57,6 @@ class SolaxCloudSensor(CoordinatorEntity[solaxcloudCoordinator], SensorEntity):
 
     @property
     def native_value(self) -> datetime | None:
-       #print("called")
        """Return the state of the sensor."""
        if self.entity_description.key == "total_solar_power":
            # Calculate total solar production from all MPPT inputs
@@ -110,6 +106,14 @@ SENSOR_TYPES = [
         key="sn",
         name="Pocket serial",
         translation_key="pocket_serial",
+    ),
+    SensorEntityDescription(
+        key="batPower",
+        name="Battery power",
+        translation_key="battery_power",
+        device_class=SensorDeviceClass.POWER,
+        native_unit_of_measurement=UnitOfPower.WATT,
+        state_class=SensorStateClass.MEASUREMENT,
     ),
     SensorEntityDescription(
         key="ratedPower",

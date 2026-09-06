@@ -9,11 +9,7 @@ from solaxcloud.solaxcloud import solaxcloud
 import voluptuous as vol
 
 from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
-from homeassistant.helpers.selector import (
-    TextSelector,
-    TextSelectorConfig,
-    TextSelectorType,
-)
+from homeassistant.helpers.selector import TextSelector
 
 from .const import CONF_SERIAL, CONF_TOKEN, DOMAIN
 
@@ -58,10 +54,8 @@ class SolaxCloudConfigFlow(ConfigFlow, domain=DOMAIN):
                     {
                         vol.Required(
                             CONF_TOKEN, default="XXXXXXXXXXXXXXXXXXXXXXX"
-                        ): TextSelector(TextSelectorConfig(type=TextSelectorType.TEXT)),
-                        vol.Required(CONF_SERIAL, default="XXXXXXXXXX"): TextSelector(
-                            TextSelectorConfig(type=TextSelectorType.TEXT)
-                        ),
+                        ): TextSelector(),
+                        vol.Required(CONF_SERIAL, default="XXXXXXXXXX"): TextSelector(),
                     }
                 ),
                 user_input,
